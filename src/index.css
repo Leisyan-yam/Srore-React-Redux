@@ -5,9 +5,405 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('https://images.unsplash.com/photo-1566636571155-8c44187a0ccb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2140&q=80');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #dfbb0c;
+  font-family: 'Montserrat', sans-serif;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  }
+
+
+.products{
+padding-top: 100px;  
+padding-left: 400px;
+}
+
+
+nav{  
+  gap: 40px;
+  padding: 30px;
+  width: 95vw;
+  background: url('https://images.unsplash.com/photo-1566636571155-8c44187a0ccb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2140&q=80');
+  height: 40px;
+  display: flex;
+  z-index: 2;
+  position: fixed;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  }
+  .logo{
+    margin-left: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 26px;
+    color: #e7e012;
+    text-decoration: none;
+  }
+
+.box{
+  margin-left: auto;
+  right: 50px;
+  display: flex;
+  justify-content: baseline;
+  gap: 5px;
+  border: 0.7px solid #212109;
+  background-color:#e7e012;
+  border-radius: 20px;
+  height: 25px;
+  padding: 5px;
+  border: #9da19c;
+}
+
+
+
+.totalSum{
+  font-size: 12px;
+  border-radius: 20px;
+  border: 0.5px solid #3c392a;
+  height: 9px;
+  background-color: #3c392a;
+  padding: 3px;
+  color: #cdb70b;
+}
+.link{
+  color: #b7b3a8;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.link:hover{
+  color: #e7e012;
+}
+
+.dishImage{
+  width: 280px;
+}
+
+.dishImageinthecart{
+  width: 200px;
+}
+.categories{
+  z-index: 1;
+  width: 400px;
+  padding-top: 140px;
+  position: fixed;
+}
+.dishes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px;
+  }
+
+.each-dish{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: #ab9219;
+  background-color: #52514c67;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 10px;
+}
+.cartIcon{
+width: 25px;
+}
+.totalSum{
+padding-bottom: 10px;
+}
+
+p{
+font-size: 18px;
+font-family: 'Karla', sans-serif;
+}
+.categoryButton{
+  color: #b7b3a8;  
+}
+
+.categoryButtonSelected{
+color: #e7e012;
+}
+.categoryButton:hover{
+  color: #e7e012;
+  }
+  .delete{
+    width: 20px;
+  }
+
+.InsideCart{
+  padding-top: 150px;
+  text-align: center;
+}
+
+
+  .InTheCart{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    
+  }
+  .cartItems{
+    background-color: #9da19c86;
+    padding: 20px;
+    border-radius: 30px;
+    color: #2a2926;
+    font-family: 'Karla', sans-serif;
+    margin: 40px;
+    width: 250px;
+  }
+
+
+  .quantities{
+    background-color: #18241269;
+    color: #dfbb0c;
+    border-radius: 30px;
+    width: 90px;
+    margin: 4px;
+  }
+
+  .name, .price, .btn{
+    margin: 6px;
+  }
+  .AddBtn{
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    margin: 10px;
+    width: 130px;
+    background-color:  #bdb82a;
+    border: 0;
+    color: #2a2926;
+    padding: 8px;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 200;
+  }
+  .AddBtn:hover{
+    box-shadow: 0 0 4px #f6f034;
+  }
+
+
+  .name{
+    color: #b1b11b;
+    letter-spacing: 0.2em;
+    font-weight: 200;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    padding-top: 3px;
+  }
+  .price{
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 5px;
+    color:  #9da19c;
+  }
+
+  .btn{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    color: #cdb70b;
+  }
+  h2{
+    font-family: 'Karla', sans-serif;
+    font-size: 27px;
+    color: #b7b3a8;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .home{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+h1{
+    width: 60%;
+    font-family: 'Karla', sans-serif;
+    font-size: 47px;
+    text-transform: uppercase;
+    color: #e7e012;
+    text-align: center;
+    animation: Color 4s linear infinite;
+    -webkit-animation: Color 7s ease-in-out infinite;
+  }
+
+  @keyframes Color{
+    0%{
+      color:#A0D468;
+    }
+    
+    20%{
+      color:#e7b10e;
+    }
+    
+    40%{
+      color:#FFCE54;
+    }
+    
+    60%{
+      color:#FC6E51;
+    }
+    
+    80%{
+      color:#e7e012;
+    }
+    
+    100%{
+      color:#d1d864f9;
+    }
+  }
+  
+  @-moz-keyframes Color{
+    0%{
+      color:#A0D468;
+    }
+    
+    20%{
+      color:#e7e012;
+    }
+    
+    40%{
+      color:#FFCE54;
+    }
+    
+    60%{
+      color:#FC6E51;
+    }
+    
+    80%{
+      color:#ED5565;
+    }
+    
+    100%{
+      color:#AC92EC;
+    }
+  }
+  
+  @-webkit-keyframes Color{
+    0%{
+      color:#A0D468;
+    }
+    
+    20%{
+      color:#4FC1E9;
+    }
+    
+    40%{
+      color:#FFCE54;
+    }
+    
+    60%{
+      color:#FC6E51;
+    }
+    
+    80%{
+      color:#ED5565;
+    }
+    
+    100%{
+      color:#645c77;
+    }
+  }
+
+
+  .makeAnOrderBtn{
+    margin-top: 40px;
+    background-color: #e7e012;
+    border: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 220px;
+    animation: glowing 3s infinite;
+    }
+    
+    @keyframes glowing {
+      0% {
+        background-color: #e7e012;
+        box-shadow: 0 0 4px #f6f034;
+      }
+      50% {
+        background-color: #e7e012;
+        box-shadow: 0 0 10px #e9e45f;
+      }
+      100% {
+        background-color: #e7e012;
+        box-shadow: 0 0 3px #eee846;
+      }
+    }
+  
+    .total{
+      color: #b1b11b;
+    }
+
+
+  .Link{
+      text-decoration: none;
+      color: #123e08;
+  }
+
+
+  @media all and (max-width:500px){
+    nav{
+      gap: 15px;
+      padding: 15px;
+      justify-content: space-around;
+    }
+    .logo{
+      margin-left: 0px;
+    }
+
+    .link{
+      padding: 5px;
+    }
+    .cartIcon{
+      width: 20px;
+      height: 20px;
+    }
+    .box{
+      margin-left: 0px;
+      padding: 7px;
+    }
+    h1{
+      font-size: 40px;
+    }
+
+
+    .categories{
+      background: url('https://images.unsplash.com/photo-1566636571155-8c44187a0ccb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2140&q=80');
+      width: 100%;
+      padding-bottom: 50px;
+    }
+
+    .products{
+      margin-top: 330px;
+      padding-left: 0px; 
+      }
+
+      .dishes{
+        padding: 5px;
+      }
+  }
