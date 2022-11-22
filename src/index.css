@@ -369,7 +369,7 @@ h1{
   @media all and (max-width:500px){
 
     body{
-      background-size: cover;
+      height: 100%;
     }
     nav{
       gap: 15px;
