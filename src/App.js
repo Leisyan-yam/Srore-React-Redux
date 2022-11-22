@@ -18,8 +18,7 @@ function App() {
     return <Router>
       
 <nav>
-  <Link className='logo'> Good Food </Link>
-  <Link className='link' to='/home'>Home </Link>
+  <Link className='linkLogo' to='/home'> Good Food</Link>
   <Link className='link' to='Catalog'>Catalog </Link>
   <Link className='link box'to='/Cart'> <img className='cartIcon' src="https://img.icons8.com/ios/50/000000/favorite-cart.png" alt='cart'/> <span className='totalSum'> {totalPrice}$ </span></Link>
 </nav>
