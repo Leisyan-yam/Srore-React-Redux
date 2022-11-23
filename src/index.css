@@ -177,7 +177,10 @@ color: #e7e012;
   }
 
 
-  .quantities{
+  .quantities{display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
     background-color: #18241269;
     color: #dfbb0c;
     border-radius: 30px;
