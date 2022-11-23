@@ -423,5 +423,8 @@ h1{
       .dishImage{
         width: 100%;
       }
+      .quantities{
+        width: 110px;
+      }
 
   }
