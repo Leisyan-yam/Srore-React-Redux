@@ -370,7 +370,7 @@ h1{
     
     body{
       background-attachment: fixed;
-      height: fit-content;
+      background-size:auto
     }
     nav{
       gap: 15px;
