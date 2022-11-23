@@ -425,6 +425,10 @@ h1{
       }
      .quantities{
       width: 120px;
+      margin: 0;
+     }
+     .btn{
+      margin: 3px;
      }
 
   }
