@@ -41,7 +41,7 @@ nav{
   height: 40px;
   display: flex;
   z-index: 2;
-  position: fixed, fixed;;
+  position: fixed;
   font-size: 16px;
   font-family: 'Karla', sans-serif;
   }
@@ -106,7 +106,7 @@ nav{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 50px;
+  padding: 0px;
   }
 
 .each-dish{
@@ -369,7 +369,8 @@ h1{
   @media all and (max-width:500px){
     
     body{
-      height: auto;
+      background-attachment: fixed;
+      height: fit-content;
     }
     nav{
       gap: 15px;
@@ -411,4 +412,11 @@ h1{
       .dishes{
         padding: 5px;
       }
+      .each-dish{
+        width: 100%;
+      }
+      .dishImage{
+        width: 100%;
+      }
+
   }
