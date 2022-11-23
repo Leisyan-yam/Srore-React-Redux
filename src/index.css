@@ -5,14 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url('https://images.unsplash.com/photo-1566636571155-8c44187a0ccb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2140&q=80');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+
   color: #dfbb0c;
   font-family: 'Montserrat', sans-serif;
 }
 
-
+.bg{
+  z-index: -2;  
+  position: fixed;
+  background: url('https://images.unsplash.com/photo-1566636571155-8c44187a0ccb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2140&q=80');
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -369,8 +374,8 @@ h1{
   @media all and (max-width:500px){
     
     body{
-      background-attachment: fixed;
-      background-size:auto
+    background-position: ;
+    height: 100vh;
     }
     nav{
       gap: 15px;

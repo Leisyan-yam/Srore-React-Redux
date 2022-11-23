@@ -15,7 +15,7 @@ import { getTotalPrice } from './redux/cartSlice';
 
 function App() {
   const totalPrice = useSelector(getTotalPrice)
-    return <Router>
+    return  <div> <div className="bg"></div><Router>
       
 <nav>
   <Link className='linkLogo' to='/home'> Good Food</Link>
@@ -31,7 +31,7 @@ function App() {
 </Routes>
 </Router>
 
-
+</div>
 }
 
 export default App;
