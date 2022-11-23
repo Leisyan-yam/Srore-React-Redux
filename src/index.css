@@ -407,6 +407,8 @@ h1{
     .products{
       margin-top: 330px;
       padding-left: 0px; 
+      background: url('https://images.unsplash.com/photo-1566636571155-8c44187a0ccb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2140&q=80');
+      background-attachment: fixed;
       
       }
 
